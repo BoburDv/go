@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  div[data-mode="simple"] {
+    @apply bg-[url('../img/triangle.png')]
+  }
+
+  div[data-mode="advanced"] {
+    @apply bg-[url('../img/Polygon.png')]
+  }
+
+  div[data-mode="advanced"] ul > li > img {
+    @apply w-[145px] h-[148px];
+  }
+
+  div[data-mode="simple"] > ul {
+    @apply grid-cols-2 gap-x-[80px] gap-y-[24px]
+  }
+
+  div[data-mode="advanced"] > ul {
+    @apply gap-x-[52px] gap-y-[38px];
+  }
+
+  div[data-mode="advanced"] > ul > li:nth-child(1) {
+    @apply col-span-2 place-self-center mb-[-50px];
+  }
+
+  div[data-mode="advanced"] > ul > li:nth-child(2) {
+    @apply place-self-start;
+  }
+
+  div[data-mode="advanced"] > ul > li:nth-child(3) {
+    @apply place-self-end;
+  }
+
+  div[data-mode="advanced"] > ul > li:nth-child(4) {
+    @apply place-self-end;
+  }
+
+  div[data-mode="advanced"] > ul > li:nth-child(5) {
+    @apply place-self-start;
+  }
+
+  div[data-mode="simple"] > ul > li:nth-child(3) {
+    @apply col-span-2 place-self-center;
+  }
+
+  div[data-mode="simple"] > ul > li:nth-child(4){
+    @apply hidden
+  }
+
+  div[data-mode="simple"] > ul > li:nth-child(5) {
+    @apply hidden;
+  }
+}

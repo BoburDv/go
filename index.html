@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">
+    <link rel="stylesheet" href="src/output.css">
+    
+    <title>RockPaperScissors</title>
+</head>
+
+<body class="bg-blue-950">
+
+    <!-- header score -->
+    <div class="max-w-[700px] mx-auto w-full flex mt-6 py-6 px-8 rounded-lg border border-white justify-between">
+        <div>
+            <img src="img/ROCK PAPER SCISSORS.png" alt="logo">
+        </div>
+        <div class="bg-white py-4 px-12 rounded-lg">
+            <div class="text-[#2A45C2]">SCORE</div>
+            <div id="score" class="text-5xl text-center">0</div>
+        </div>
+    </div>
+
+    <!-- Game zone -->
+    <section id="gameZone">
+        <div class="max-w-[476px] w-full mt-[60px] mx-auto bg-no-repeat bg-center" data-mode="simple" id="gameZoneInner">
+            <ul class="grid gap-x-20 gap-y-6">
+                <li>
+                    <button class="hand"><img src="img/paper.svg" alt="paper" width="198"></button>
+                </li>
+                <li>
+                    <button class="hand"><img src="img/rock.svg" alt="rock" width="198"></button>
+                </li>
+                <li>
+                    <button class="hand"><img src="img/scissors.svg" alt="scissors" width="198"></button>
+                </li>
+                <li>
+                    <button class="hand"><img src="img/lizard293.svg" alt="scissors" width="198"></button>
+                </li>
+                <li>
+                    <button class="hand"><img src="img/puppy.svg" alt="scissors" width="198"></button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Second game -->
+    <section id="secondGameZone" class="hidden">
+        <div class="flex items-center justify-between w-full mt-[72px] max-w-[800px] mx-auto">
+            <div>
+                <img src="img/paper.svg" id="user">
+            </div>
+            <div class="px-16 text-center">
+                <p id="status" class="text-white"></p>
+                <button id="refreshGame" class=" px-[60px] bg-white rounded-lg">Play agin</button>
+            </div>
+            <div>
+                <img src="img/hand-load.svg" id="robot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal and Advanced -->
+    <div class="max-w-7xl px-10 w-full justify-between mx-auto flex">
+        <div>
+            <button class="btn py-3 px-9 border border-white rounded-lg text-white" onclick="my_modal_3.showModal()">RULES</button>
+            <dialog id="my_modal_3" class="modal rounded-lg">
+                <div class="modal-box">
+                    <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-0 top-">✕</button>
+                    </form>
+                    <div class="p-11">
+                        <h1 class="text-3xl">RULES</h1>
+                        <div class="pt-11">
+                            <img src="img/rule-basic.png" id="ruleImage">
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+        <div>
+            <button class="py-3 px-9 border border-white rounded-lg text-white" id="modeChanger">ADVANCED</button>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
