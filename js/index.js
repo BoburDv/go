@@ -9,6 +9,7 @@ const elScore = document.getElementById("score")
 const elGameZoneInner = document.getElementById("gameZoneInner")
 const elModeChanger = document.getElementById("modeChanger")
 const elRuleImage = document.getElementById("ruleImage")
+const elLogo = document.getElementById("logoImage")
 
 
 
@@ -65,7 +66,7 @@ function refreshGame() {
 
 
 function robotChooser() {
-    const hands = ["paper", "scissors", "rock"];
+    const hands = ["paper", "scissors", "rock", "lizard", "puppy"];
     const randomIndex = Math.trunc(Math.random() * hands.length)
     return hands[randomIndex];
 }
@@ -76,15 +77,16 @@ function findWinner(user, robot) {
     if (user == robot) {
         return "TIRED";
     } else if (
-        (user == "rock" && robot == "scissors") ||
-        (user == "paper" && robot == "rock") ||
-        (user == "scissors" && robot == "paper")
+        (user == "rock" && (robot == "scissors" || robot == "lizard")) ||
+        (user == "paper" && (robot == "rock" || robot == "puppy")) ||
+        (user == "scissors" && (robot == "paper" || robot == "lizard")) ||
+        (user == "lizard" && (robot == "paper" || robot == "puppy")) ||
+        (user == "puppy" && (robot == "rock" || robot == "scissors"))
     ) {
         return "YOU";
-    }
-    else {
+    } else {
         return "ROBOT";
-    }
+    }    
 }
 
 
@@ -95,10 +97,12 @@ elModeChanger.addEventListener("click", function (){
         elGameZoneInner.dataset.mode = "advanced"
         elModeChanger.textContent = "SIMPLE"
         elRuleImage.src = "./img/rule-advanced.png"
+        elLogo.src = "./img/logo-1.png"
     } 
     else {
         elGameZoneInner.dataset.mode = "simple"
         elModeChanger.textContent = "ADVANCED"
         elRuleImage.src = "./img/rule-basic.png"
+        elLogo.src = "./img/logo-2.png"
     }
 });
