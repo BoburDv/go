@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">
     <link rel="stylesheet" href="src/output.css">
-    
     <title>RockPaperScissors</title>
 </head>
 
@@ -48,16 +46,16 @@
 
     <!-- Second game -->
     <section id="secondGameZone" class="hidden">
-        <div class="flex items-center justify-between w-full mt-[72px] max-w-[800px] mx-auto">
+        <div class="flex items-center mt-16 mb-16 w-full justify-center mx-auto">
             <div>
-                <img src="img/paper.svg" id="user">
+                <img src="img/paper.svg" id="user" width="292">
             </div>
             <div class="px-16 text-center">
-                <p id="status" class="text-white"></p>
-                <button id="refreshGame" class=" px-[60px] bg-white rounded-lg">Play agin</button>
+                <p id="status" class="text-white font-bold text-4xl"></p>
+                <button class="btn py-3 font-semibold px-9 text-blue-950 bg-white rounded-lg mt-5" id="refreshGame">PLAY AGAIN</button>
             </div>
             <div>
-                <img src="img/hand-load.svg" id="robot">
+                <img src="img/hand-load.svg" id="robot" width="292">
             </div>
         </div>
     </section>
@@ -65,23 +63,19 @@
     <!-- Modal and Advanced -->
     <div class="max-w-7xl px-10 w-full justify-between mx-auto flex">
         <div>
-            <button class="btn py-3 px-9 border border-white rounded-lg text-white" onclick="my_modal_3.showModal()">RULES</button>
-            <dialog id="my_modal_3" class="modal rounded-lg">
+            <button class="btn py-3 font-semibold px-9 border border-white rounded-lg text-white hover:bg-white hover:text-blue-950" onclick="my_modal_3.showModal()">RULES</button>
+            <dialog id="my_modal_3" class="modal p-10 rounded-lg">
                 <div class="modal-box">
                     <form method="dialog">
-                        <button class="btn btn-sm btn-circle btn-ghost absolute right-0 top-">✕</button>
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-10 top-10">✕</button>
                     </form>
-                    <div class="p-11">
-                        <h1 class="text-3xl">RULES</h1>
-                        <div class="pt-11">
-                            <img src="img/rule-basic.png" id="ruleImage">
-                        </div>
-                    </div>
+                    <h3 class="text-3xl font-bold mb-9">RULES</h3>
+                    <img src="img/rule-basic.png" id="ruleImage">
                 </div>
             </dialog>
         </div>
         <div>
-            <button class="py-3 px-9 border border-white rounded-lg text-white" id="modeChanger">ADVANCED</button>
+            <button class="font-semibold py-3 px-9 border border-white rounded-lg text-white hover:bg-white hover:text-blue-950" id="modeChanger">ADVANCED</button>
         </div>
     </div>
 

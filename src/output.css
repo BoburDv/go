@@ -663,8 +663,12 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.right-0 {
-  right: 0px;
+.right-10 {
+  right: 2.5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
 }
 
 .isolate {
@@ -724,8 +728,21 @@ video {
   margin-right: auto;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-6 {
@@ -736,8 +753,12 @@ video {
   margin-top: 60px;
 }
 
-.mt-\[72px\] {
-  margin-top: 72px;
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .box-border {
@@ -839,6 +860,10 @@ video {
   display: none;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -865,10 +890,6 @@ video {
 
 .max-w-\[700px\] {
   max-width: 700px;
-}
-
-.max-w-\[800px\] {
-  max-width: 800px;
 }
 
 .flex-shrink {
@@ -1976,8 +1997,8 @@ video {
      object-fit: scale-down;
 }
 
-.p-11 {
-  padding: 2.75rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-1 {
@@ -2020,11 +2041,6 @@ video {
   padding-right: 2.25rem;
 }
 
-.px-\[60px\] {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2038,10 +2054,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.pt-11 {
-  padding-top: 2.75rem;
 }
 
 .text-left {
@@ -2105,6 +2117,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -2112,6 +2129,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -2194,6 +2215,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-950 {
+  --tw-text-opacity: 1;
+  color: rgb(23 37 84 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -2664,8 +2690,18 @@ div[data-mode="simple"] > ul > li:nth-child(5) {
   }
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-blue-950:hover {
+  --tw-text-opacity: 1;
+  color: rgb(23 37 84 / var(--tw-text-opacity, 1));
 }
 
 .before\:hover\:text-center:hover::before {
