@@ -728,13 +728,16 @@ video {
   margin-right: auto;
 }
 
-.my-16 {
-  margin-top: 4rem;
+.mb-16 {
   margin-bottom: 4rem;
 }
 
 .mb-9 {
   margin-bottom: 2.25rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-2 {
@@ -751,14 +754,6 @@ video {
 
 .mt-\[60px\] {
   margin-top: 60px;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .box-border {
@@ -858,10 +853,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -2599,11 +2590,6 @@ div[data-mode="simple"] {
 
 div[data-mode="advanced"] {
   background-image: url('../img/Polygon.png');
-}
-
-div[data-mode="advanced"] ul > li > img {
-  height: 148px;
-  width: 145px;
 }
 
 div[data-mode="simple"] > ul {

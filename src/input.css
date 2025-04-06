@@ -11,10 +11,6 @@
     @apply bg-[url('../img/Polygon.png')]
   }
 
-  div[data-mode="advanced"] ul > li > img {
-    @apply w-[145px] h-[148px];
-  }
-
   div[data-mode="simple"] > ul {
     @apply grid-cols-2 gap-x-[80px] gap-y-[24px]
   }
