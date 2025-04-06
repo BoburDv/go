@@ -12,11 +12,11 @@
   }
 
   div[data-mode="simple"] > ul {
-    @apply grid-cols-2 gap-x-[80px] gap-y-[24px]
+    @apply grid-cols-2 gap-x-[100px] gap-y-[24px]
   }
 
   div[data-mode="advanced"] > ul {
-    @apply gap-x-[52px] gap-y-[38px];
+    @apply gap-x-[50px] gap-y-[35px];
   }
 
   div[data-mode="advanced"] > ul > li:nth-child(1) {
